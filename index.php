@@ -15,19 +15,19 @@
       <div class="row">
         <div class="col-6 coffee-list"><!--Левая сторона(выбор кофе)-->
           <div class="row flex-column justify-content-around">
-            <div class="coffee-item">
+            <div class="coffee-item" onclick="cookCoffee(50,'Американо')">
               <img src="img/americano.png" alt="Американо">
               <span>Американо - 50 руб.</span>
             </div>  
-            <div class="coffee-item">
+            <div class="coffee-item" onclick="cookCoffee(92,'Капучино')">
               <img src="img/cappuccino.png" alt="Капучино">
               <span>Капучино - 92 руб.</span>
             </div>  
-            <div class="coffee-item">
+            <div class="coffee-item" onclick="cookCoffee(40,'Эспрессо')">
               <img src="img/espresso.png" alt="Эспрессо">
               <span>Эспрессо - 40 руб.</span>
             </div>  
-            <div class="coffee-item">
+            <div class="coffee-item" onclick="cookCoffee(128,'Латте')">
               <img src="img/latte.jpg" alt="Латте">
               <span>Латте - 128 руб.</span>
             </div>  
@@ -39,7 +39,7 @@
               <div class="display">
                 <span class="display-text">Выберите кофе</span>
                 <div class="progress mt-2">
-                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
                 </div>
               </div>
               <div class="cup">
@@ -48,7 +48,7 @@
             </div>
             <div class="col-6"><!--баланс,АТМ и сдача-->
               <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Баланс">
+                <input type="text" class="form-control balance" placeholder="Баланс">
                 <div class="input-group-append">
                   <span class="input-group-text">&#8381;</span>
                 </div>
