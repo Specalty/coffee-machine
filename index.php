@@ -15,19 +15,19 @@
       <div class="row">
         <div class="col-6 coffee-list"><!--Левая сторона(выбор кофе)-->
           <div class="row flex-column justify-content-around">
-            <div class="coffee-item" onclick="cookCoffee(50,'Американо')">
+            <div class="coffee-item" onclick="cookCoffee(50, 'Американо', this)">
               <img src="img/americano.png" alt="Американо">
               <span>Американо - 50 руб.</span>
             </div>  
-            <div class="coffee-item" onclick="cookCoffee(92,'Капучино')">
+            <div class="coffee-item" onclick="cookCoffee(92, 'Капучино', this)">
               <img src="img/cappuccino.png" alt="Капучино">
               <span>Капучино - 92 руб.</span>
             </div>  
-            <div class="coffee-item" onclick="cookCoffee(40,'Эспрессо')">
+            <div class="coffee-item" onclick="cookCoffee(40, 'Эспрессо', this)">
               <img src="img/espresso.png" alt="Эспрессо">
               <span>Эспрессо - 40 руб.</span>
             </div>  
-            <div class="coffee-item" onclick="cookCoffee(128,'Латте')">
+            <div class="coffee-item" onclick="cookCoffee(128, 'Латте', this)">
               <img src="img/latte.jpg" alt="Латте">
               <span>Латте - 128 руб.</span>
             </div>  
@@ -48,12 +48,13 @@
             </div>
             <div class="col-6"><!--баланс,АТМ и сдача-->
               <div class="input-group mb-3">
-                <input type="text" class="form-control balance" placeholder="Баланс">
+                <input type="text" class="form-control balance" placeholder="Баланс" readonly>
                 <div class="input-group-append">
                   <span class="input-group-text">&#8381;</span>
                 </div>
               </div>
               <div class="atm">
+                <div class="cash-catcher"></div>
                 <img src="img/bill_acc.png" alt="">
               </div>
               <button class="btn btn-primary btn-block mt-3 change-btn">Сдача</button>
@@ -62,6 +63,11 @@
           </div>
         </div>
       </div>    
+    </div>
+    <div class="money">
+      <img src="img/100rub.jpg" cost="100" alt="">
+      <img src="img/500rub.jpg" cost="500" alt="">
+      <img src="img/50rub.jpg" cost="50" alt="">
     </div>
     <!-- Optional JavaScript -->
     <script src="script.js"></script>
